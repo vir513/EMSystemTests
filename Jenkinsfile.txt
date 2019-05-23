@@ -7,7 +7,7 @@ pipeline {
     }
     stages {
 	
-		
+		/*
         stage('UnitTest') {
             steps {
                 sh 'mvn test'
@@ -18,9 +18,11 @@ pipeline {
                 }
             }
         }
+		*/
+		
 		stage('SystemTest') {
             steps {
-				sh 'mvn -Dtest=ExpenseManagerSystemTest'
+				sh 'mvn -Dtest=ExpenseManagerSystemTest test'
             }
         }
 	
