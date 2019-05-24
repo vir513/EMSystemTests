@@ -20,13 +20,13 @@ pipeline {
         }
 		*/
 		
-		
+		/*
 		stage('SystemTest') {
             steps {
 				sh 'mvn -Dtest=ExpenseManagerSystemTest test'
             }
         }
-	
+	*/
 		
     }
 }
