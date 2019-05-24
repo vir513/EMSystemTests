@@ -26,7 +26,7 @@ WebDriver driver;
 
 	@Test
 	public void titleTest() {
-		driver.get("http://localhost:8089");
+		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
