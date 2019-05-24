@@ -29,7 +29,7 @@ WebDriver driver;
 	public void titleTest() {
 		System.out.println("testmethod");
 		//driver.get("http://newtours.demoaut.com/");
-		driver.get("http://localhost:9191");
+		driver.get("http://localhost:8089");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
