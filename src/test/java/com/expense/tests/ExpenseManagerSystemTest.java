@@ -21,11 +21,13 @@ WebDriver driver;
 	
 	@BeforeTest
 	public void setUp() throws Exception {
+		System.out.println("beforemethod");
 	driver = new HtmlUnitDriver();
 	}
 
 	@Test
 	public void titleTest() {
+		System.out.println("testmethod");
 		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
