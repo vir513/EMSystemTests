@@ -28,6 +28,7 @@ public class ExpenseManagerSystemTest {
 	public void titleTest2() throws Exception{
 		System.out.println("Start2");
 		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 		driver = new ChromeDriver();
 		Thread.sleep(30000);
 		driver.get("http://localhost:9191");
