@@ -9,7 +9,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class ExpenseManagerSystemTest {
 
-
+	/*
 	@Test
 	public void titleTest1(){
 		System.out.println("Start1");
@@ -21,6 +21,7 @@ public class ExpenseManagerSystemTest {
 		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
 	}
+	*/
 	
 	@Test
 	public void titleTest2(){
