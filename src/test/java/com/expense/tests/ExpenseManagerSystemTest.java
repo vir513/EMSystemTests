@@ -24,7 +24,7 @@ public class ExpenseManagerSystemTest {
 	*/
 	
 	@Test
-	public void titleTest2 throws Exception{
+	public void titleTest2() throws Exception{
 		System.out.println("Start2");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
