@@ -11,8 +11,20 @@ public class ExpenseManagerSystemTest {
 
 
 	@Test
-	public void titleTest(){
-		System.out.println("Start");
+	public void titleTest1(){
+		System.out.println("Start1");
+		WebDriver driver;
+		driver = new HtmlUnitDriver();
+		driver.get("http://newtours.demoaut.com/");
+		String expectedTitle = "Welcome: Mercury Tours";
+		String actualTitle = driver.getTitle();
+		assertEquals(expectedTitle, actualTitle);
+        System.out.println(actualTitle);
+	}
+	
+	@Test
+	public void titleTest2(){
+		System.out.println("Start2");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		driver.get("http://localhost:9191");
@@ -21,5 +33,6 @@ public class ExpenseManagerSystemTest {
 		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
 	}
+
 
 }
