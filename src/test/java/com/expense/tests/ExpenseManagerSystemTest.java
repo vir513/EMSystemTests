@@ -4,7 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class ExpenseManagerSystemTest {
@@ -27,7 +28,7 @@ public class ExpenseManagerSystemTest {
 	public void titleTest2() throws Exception{
 		System.out.println("Start2");
 		WebDriver driver;
-		driver = new HtmlUnitDriver();
+		driver = new ChromeDriver();
 		Thread.sleep(30000);
 		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
