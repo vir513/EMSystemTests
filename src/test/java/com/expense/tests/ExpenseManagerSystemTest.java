@@ -28,7 +28,7 @@ public class ExpenseManagerSystemTest {
 		System.out.println("Start2");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		Thread.sleep(15000);
+		Thread.sleep(30000);
 		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
