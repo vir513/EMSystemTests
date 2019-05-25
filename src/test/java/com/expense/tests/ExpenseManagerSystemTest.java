@@ -11,11 +11,10 @@ public class ExpenseManagerSystemTest {
 
 
 	@Test
-	public void titleTest() throws Exception {
+	public void titleTest(){
 		System.out.println("Start");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		Thread.sleep(5000);
 		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
