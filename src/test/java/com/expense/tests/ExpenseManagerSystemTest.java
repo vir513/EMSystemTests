@@ -20,10 +20,12 @@ public class ExpenseManagerSystemTest {
 		System.out.println("Start");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		driver.get("http://localhost:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
+		System.out.println("Expected: " + expectedTitle);
+		System.out.println("Actual: " + actualTitle);
 		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
 	}
