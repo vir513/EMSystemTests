@@ -1,12 +1,12 @@
 package com.expense.tests;
 
-//import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 
-//import org.junit.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
