@@ -1,8 +1,11 @@
 package com.expense.tests;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
-import org.junit.Test;
+//import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
+
+//import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
@@ -13,15 +16,8 @@ public class ExpenseManagerSystemTest {
 	
 	@Test
 	public void titleTest1() throws Exception{
-		System.out.println("Start1");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		//driver.get("http://newtours.demoaut.com/");
-		//String expectedTitle = "Welcome: Mercury Tours";
-		Thread.sleep(10000);
-		//driver.get("http://localhost:9191/manager/html");
-		//driver.get("http://localhost:9191/ExpenseApp-1/");
-		//driver.get("http://localhost:9191/ExpenseApp-1/login.jsp");
 		driver.get("http://192.168.100.65:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
