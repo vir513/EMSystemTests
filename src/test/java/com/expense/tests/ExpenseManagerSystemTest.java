@@ -19,7 +19,8 @@ public class ExpenseManagerSystemTest {
 		//driver.get("http://newtours.demoaut.com/");
 		//String expectedTitle = "Welcome: Mercury Tours";
 		Thread.sleep(10000);
-		driver.get("http://localhost:9191/manager/html");
+		//driver.get("http://localhost:9191/manager/html");
+		driver.get("http://localhost:9191/ExpenseApp-1/");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
