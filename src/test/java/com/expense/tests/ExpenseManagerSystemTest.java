@@ -18,7 +18,7 @@ public class ExpenseManagerSystemTest {
 		driver.get("http://192.168.100.65:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
-		assertEquals(actualTitle, expectedTitle);
+		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
 	}
 	
