@@ -15,7 +15,8 @@ public class ExpenseManagerSystemTest {
 	public void titleTest1() throws Exception{
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		driver.get("http://192.168.100.65:8089");
+		Thread.sleep(10000);
+		driver.get("http://192.168.100.65:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
