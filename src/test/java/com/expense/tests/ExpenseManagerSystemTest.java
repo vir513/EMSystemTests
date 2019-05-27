@@ -16,8 +16,12 @@ public class ExpenseManagerSystemTest {
 		System.out.println("Start1");
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
-		driver.get("http://newtours.demoaut.com/");
-		String expectedTitle = "Welcome: Mercury Tours";
+		
+		//driver.get("http://newtours.demoaut.com/");
+		//String expectedTitle = "Welcome: Mercury Tours";
+		
+		driver.get("http://localhost:9191");
+		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
