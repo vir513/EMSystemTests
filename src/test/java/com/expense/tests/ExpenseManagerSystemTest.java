@@ -21,7 +21,8 @@ public class ExpenseManagerSystemTest {
 		Thread.sleep(10000);
 		//driver.get("http://localhost:9191/manager/html");
 		//driver.get("http://localhost:9191/ExpenseApp-1/");
-		driver.get("http://localhost:9191/ExpenseApp-1/login.jsp");
+		//driver.get("http://localhost:9191/ExpenseApp-1/login.jsp");
+		driver.get("http://192.168.100.65:9191");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
