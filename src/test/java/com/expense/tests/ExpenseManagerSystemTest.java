@@ -16,12 +16,18 @@ public class ExpenseManagerSystemTest {
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		Thread.sleep(10000);
-		driver.get("http://192.168.100.65:9191");
+		//driver.get("http://192.168.100.65:9191");
+		driver.get("http://localhost:9191/ExpenseApp-1/login.jsp");
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
         System.out.println(actualTitle);
 	}
 	
-
+	@Test
+	public void titleTest1() throws Exception{
+		WebDriver driver;
+		driver = new HtmlUnitDriver();
+		Thread.sleep(10000);
+	
 }
