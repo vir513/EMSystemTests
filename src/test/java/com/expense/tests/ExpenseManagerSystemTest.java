@@ -16,8 +16,7 @@ public class ExpenseManagerSystemTest {
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		Thread.sleep(10000);
-		//driver.get("http://192.168.100.65:9191");						//Using dev tomcat
-		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");		//Using our tomcat
+		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");		
 		String expectedTitle = "Login page";
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
