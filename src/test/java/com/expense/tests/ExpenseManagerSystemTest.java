@@ -24,10 +24,5 @@ public class ExpenseManagerSystemTest {
         System.out.println(actualTitle);
 	}
 	
-	@Test
-	public void titleTest1() throws Exception{
-		WebDriver driver;
-		driver = new HtmlUnitDriver();
-		Thread.sleep(10000);
 	
 }
