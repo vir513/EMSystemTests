@@ -19,10 +19,10 @@ public class ExpenseManagerSystemTest {
 		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");	
 
 		//Comment below line to make test pass
-		String expectedTitle = "Hello Page";
+		//String expectedTitle = "Hello Page";
 		
 		//Uncomment below line to make test pass
-		//String expectedTitle = "Login page";
+		String expectedTitle = "Login page";
 		
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
