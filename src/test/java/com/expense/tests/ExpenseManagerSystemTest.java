@@ -16,14 +16,13 @@ public class ExpenseManagerSystemTest {
 		WebDriver driver;
 		driver = new HtmlUnitDriver();
 		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");	
-		Thread.sleep(5000);
 		//Thread.sleep(600000);
 
 		//Buggy Code
-		//String expectedTitle = "Hello Page";
+		String expectedTitle = "Hello Page";
 		
 		//Correct Code
-		String expectedTitle = "Login page";
+		//String expectedTitle = "Login page";
 		
 		String actualTitle = driver.getTitle();
 		assertEquals(expectedTitle, actualTitle);
