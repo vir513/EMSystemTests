@@ -18,10 +18,10 @@ public class ExpenseManagerSystemTest {
 		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");	
 		//Thread.sleep(600000);
 
-		//Comment below line to make test pass
+		//Buggy Code
 		String expectedTitle = "Hello Page";
 		
-		//Uncomment below line to make test pass
+		//Correct Code
 		//String expectedTitle = "Login page";
 		
 		String actualTitle = driver.getTitle();
